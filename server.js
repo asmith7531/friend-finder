@@ -20,7 +20,7 @@ connection.connect(function(err){
     console.log("error connecting: "+err.stack);
     throw(err);
   }
-  console.log("connected as id : " + connection.threadId)
+  console.log("connected to friends_db as id : " + connection.threadId)
 })
 //sets up the Express app to handle data parsing
 app.use(express.urlencoded({
@@ -44,7 +44,7 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 })
 
-app.get("/create_account", function(req, res){
+app.get("/createaccount", function(req, res){
   res.sendFile(path.join(__dirname, "/public/form.html"))
 })
 
