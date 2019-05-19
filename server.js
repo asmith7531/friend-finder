@@ -44,11 +44,16 @@ app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "/public/index.html"));
 })
 
+
 app.get("/createaccount", function(req, res){
   res.sendFile(path.join(__dirname, "/public/form.html"))
 })
 
-app.get("api/users", function () {
+app.get("/dontSue", function (req, res) {
+  res.sendFile(path.join(__dirname, "/public/dontSue.html"));
+})
+
+app.get("/api/users", function () {
   return res.json(users);
 })
 
