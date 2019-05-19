@@ -10,6 +10,21 @@ $(function(){
             } else {
                 $('.wizard > .steps ul').removeClass('step-2');
             }
+            if ( newIndex === 1 ) {
+                $('.wizard > .steps ul').addClass('step-2');
+            } else {
+                $('.wizard > .steps ul').removeClass('step-2');
+            }
+            if ( newIndex === 1 ) {
+                $('.wizard > .steps ul').addClass('step-2');
+            } else {
+                $('.wizard > .steps ul').removeClass('step-2');
+            }
+            if ( newIndex === 1 ) {
+                $('.wizard > .steps ul').addClass('step-2');
+            } else {
+                $('.wizard > .steps ul').removeClass('step-2');
+            }
             if ( newIndex === 2 ) {
                 $('.wizard > .steps ul').addClass('step-3');
             } else {

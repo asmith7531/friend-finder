@@ -1,219 +1,159 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>FormWizard_v4</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="colorlib.com">
 
-		<!-- MATERIAL DESIGN ICONIC FONT -->
-		<link rel="stylesheet" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+<head>
+	<meta charset="utf-8">
+	<title>FormWizard_v4</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="colorlib.com">
 
-		<!-- DATE-PICKER -->
-		<link rel="stylesheet" href="static/vendor/date-picker/css/datepicker.min.css">
+	<!-- MATERIAL DESIGN ICONIC FONT -->
+	<link rel="stylesheet" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.css">
 
-		<!-- STYLE CSS -->
-		<link rel="stylesheet" href="static/css/formstyle.css">
-	</head>
-	<body>
-		<div class="wrapper">
-			<div class="image-holder">
-				<img src="static/images/form-wizard.png" alt="">
-			</div>
-            <form action="">
-            	<div class="form-header">
-            		<a href="#">Friend Finder</a>
-            		<h3>Create an Account</h3>
-            	</div>
-            	<div id="wizard">
-            		<!-- SECTION 1 -->
-	                <h4></h4>
-	                <section>
-	                    <div class="form-row" style="margin-bottom: 26px;">
-	                    	<label for="">
-	                    		Is this course for UF Online?
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="no" class="option">No</option>
-									<option value="yes" class="option">Yes</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Preferred System:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="canvas" class="option">Canvas</option>
-									<option value="svg" class="option">Svg</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		College / Department:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="florida" class="option">University of Florida</option>
-									<option value="havard" class="option">University of Havard</option>
-									<option value="oxford" class="option">University of Oxford</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Term:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-	                    			<option value="" selected disabled>Select Term</option>
-									<option value="term 1" class="option">Term 1</option>
-									<option value="term 2" class="option">Term 2</option>
-									<option value="term 3" class="option">Term 3</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Instructor Username:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control">
-	                    	</div>
-	                    </div>		
-	                </section>
-	                
-					<!-- SECTION 2 -->
-	                <h4></h4>
-	                <section>
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Date of Birth:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control datepicker-here" data-language='en' data-date-format="dd - mm - yyyy" id="dp1">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Country of Birth:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-									<option value="united states" class="option">United States</option>
-									<option value="united kingdom" class="option">United Kingdom</option>
-									<option value="viet nam" class="option">Viet Nam</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Your Email:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 3.4vh">
-	                    	<label for="">
-	                    		Phone Number:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 50px;">
-	                    	<label for="">
-	                    		Gender:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<div class="checkbox-circle">
-									<label class="male">
-										<input type="radio" name="gender" value="male" checked> Male<br>
-										<span class="checkmark"></span>
-									</label>
-									<label class="female">
-										<input type="radio" name="gender" value="female"> Female<br>
-										<span class="checkmark"></span>
-									</label>
-									<label>
-										<input type="radio" name="gender" value="transgender">Transgender<br>
-										<span class="checkmark"></span>
-									</label>
-								</div>
-	                    	</div>
-	                    </div>		
-	                </section>
+	<!-- DATE-PICKER -->
+	<link rel="stylesheet" href="static/vendor/date-picker/css/datepicker.min.css">
+	<!-- STYLE CSS -->
+	<link rel="stylesheet" href="static/css/formstyle.css">
+</head>
 
-	                <!-- SECTION 3 -->
-	                <h4></h4>
-	                <section>
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Course ID:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. abc 12345 or abc 1234L">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row">
-	                    	<label for="">
-	                    		Course Title:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. Intro to physic">
-	                    	</div>
-	                    </div>	
-                     	<div class="form-row">
-	                    	<label for="">
-	                    		Section(s):
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<input type="text" class="form-control" placeholder="Ex. 3679 or 33fa, 4295">
-	                    	</div>
-	                    </div>	
-	                    <div class="form-row" style="margin-bottom: 38px">
-	                    	<label for="">
-	                    		Select Teacher:
-	                    	</label>
-	                    	<div class="form-holder">
-	                    		<select name="" id="" class="form-control">
-	                    			<option value="frances meyer" class="option">Frances Meyer</option>
-									<option value="johan lucas" class="option">Johan Lucas</option>
-									<option value="merry linn" class="option">Merry Linn</option>
-								</select>
-								<i class="zmdi zmdi-caret-down"></i>
-	                    	</div>
-	                    </div>	
-	                    <div class="checkbox-circle" style="margin-bottom: 48px;">
-							<label>
-								<input type="checkbox" checked>I agree all statement in Terms & Conditions
-								<span class="checkmark"></span>
-							</label>
-						</div>
-	                </section>
-            	</div>
-            </form>
+<body>
+	<div class="wrapper">
+		<div class="image-holder">
+			<img src="static/images/form-wizard.png" alt="">
 		</div>
+		<form action="">
+			<div class="form-header">
+				<h1><a href="http://localhost:3000">Friend Finder</a></h1>
+				<h3>Create an Account</h3>
+			</div>
+			<div id="wizard">
+				<!-- SECTION 1 -->
+				<h4></h4>
+				<section>
+					<div class="form-row">
+						<label for="name">
+							Name:
+						</label>
+						<div class="form-holder">
+							<input type="text" class="form-control">
+						</div>
+					</div>
+				</section>
 
-		<script src="js/jquery-3.3.1.min.js"></script>
-		
-		<!-- JQUERY STEP -->
-		<script src="js/jquery.steps.js"></script>
+				<!-- Question 1 -->
+				<h4></h4>
+				<section>
+					<div class="form-row" style="margin-bottom: 36px;">
+						<label for="">
+							Coke or Pepsi?
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="yes" class="option">I'm open to it all!</option>
+								<option value="yes" class="option">Coke Only</option>
+								<option value="yes" class="option">Pepsi Only</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+				</section>
+				<!-- Question 2 -->
+				<h4></h4>
+				<section>
+					<div class="form-row" style="margin-bottom: 36px;">
+						<label for="">
+							Skydiving or Netflix?
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="yes" class="option">Skydiving! I love adrenaline!</option>
+								<option value="yes" class="option">Naw I'm good fam, gimme Netflix,</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+				</section>
+				<!-- Question 3 -->
+				<h4></h4>
+				<section>
+					<div class="form-row" style="margin-bottom: 36px;">
+						<label for="">
+							What is the most important quality in a friend?
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="yes" class="option">Loyalty</option>
+								<option value="yes" class="option">Compassion</option>
+								<option value="yes" class="option">Adventurous</option>
+								<option value="yes" class="option">Funny</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+				</section>
+				<!-- Question 4 -->
+				<h4></h4>
+				<section>
+					<div class="form-row" style="margin-bottom: 36px;">
+						<label for="">
+							Where would you like to travel most?
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="yes" class="option">Italy</option>
+								<option value="yes" class="option">Greece</option>
+								<option value="yes" class="option">Machu Pichu</option>
+								<option value="yes" class="option">New Zealand</option>
+								<option value="yes" class="option">I'm open to it all!</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+				</section>
+				<!-- Question 5 -->
+				<h4></h4>
+				<section>
+					<div class="form-row" style="margin-bottom: 36px;">
+						<label for="">
+							Which of these foods do you like best?
+						</label>
+						<div class="form-holder">
+							<select name="" id="" class="form-control">
+								<option value="yes" class="option">Pizza</option>
+								<option value="yes" class="option">Pizza w/ pineapples</option>
+								<option value="yes" class="option">All pizza</option>
+								<option value="yes" class="option">I don't like pizza</option>
+							</select>
+							<i class="zmdi zmdi-caret-down"></i>
+						</div>
+					</div>
+				</section>
 
-		<!-- DATE-PICKER -->
-		<script src="vendor/date-picker/js/datepicker.js"></script>
-		<script src="vendor/date-picker/js/datepicker.en.js"></script>
+				<!-- SECTION 3 -->
+				<h4></h4>
+				<section>
 
-		<script src="static/scripts/formstylemain.js"></script>
-<!-- Template created and distributed by Colorlib -->
+					<i class="zmdi zmdi-caret-down"></i>
+
+					<div class="checkbox-circle" style="margin-bottom: 48px;">
+						<label>
+							<input type="checkbox">I agree all statement in <a href="http://localhost:3000/dontSue">Terms &
+								Conditions</a>
+							<span class="checkmark"></span>
+						</label>
+					</div>
+				</section>
+			
+		</form>
+	</div>
+	<script src="static/js/jquery-3.3.1.min.js"></script>
+	<!-- JQUERY STEP -->
+	<script src="static/js/jquery.steps.js"></script>
+	<!-- DATE-PICKER -->
+	<script src="static/vendor/date-picker/js/datepicker.js"></script>
+	<script src="static/vendor/date-picker/js/datepicker.en.js"></script>
+	<script src="static/scripts/formstylemain.js"></script>
+	<!-- Template created and distributed by Colorlib -->
 </body>
+
 </html>
