@@ -7,6 +7,21 @@ var body =require ("body-parser");
 var app = express();
 var PORT = 3000;
 
+var connection = mysql.createConnection({
+  host:"localhost",
+  port:3306,
+  user:"root",
+  password:"Zenziethewonderdog26!",
+  database:"friends_db"
+});
+
+connection.connect(function(err){
+  if(err){
+    console.log("error connecting: "+err.stack);
+    throw(err);
+  }
+  console.log("connected as id : " + connection.threadId)
+})
 //sets up the Express app to handle data parsing
 app.use(express.urlencoded({
   extended: true
