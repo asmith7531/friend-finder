@@ -2,12 +2,12 @@
 var mysql = require("mysql");
 var express = require("express");
 var path = require("path");
-
+var body =require ("body-parser");
 //sets up the express app
 var app = express();
 var PORT = 3000;
 
-//sets up the Express app to hadle data parsing
+//sets up the Express app to handle data parsing
 app.use(express.urlencoded({
   extended: true
 }));
@@ -25,9 +25,12 @@ var users = [{
 
 // Routes
 //=================================================================
-
 app.get("/", function (req, res) {
   res.sendFile(path.join(__dirname, "/public/index.html"));
+})
+
+app.get("/create_account", function(req, res){
+  res.sendFile(path.join(__dirname, "/public/form.html"))
 })
 
 app.get("api/users", function () {
