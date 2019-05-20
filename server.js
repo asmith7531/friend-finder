@@ -3,9 +3,13 @@ var mysql = require("mysql");
 var express = require("express");
 var path = require("path");
 var body =require ("body-parser");
+var exphbs = require("express-handlebars")
 //sets up the express app
 var app = express();
 var PORT = 3000;
+
+app.engine("handlebars",exphbs({defautLayout:"main"}));
+app.set("view engine", "handlebars");
 
 var connection = mysql.createConnection({
   host:"localhost",
@@ -41,19 +45,25 @@ var users = [{
 // Routes
 //=================================================================
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/index.html"));
+  // res.sendFile(path.join(__dirname, "/public/index.html"));
+  res.render("index")
 })
 
-
 app.get("/createaccount", function(req, res){
-  res.sendFile(path.join(__dirname, "/public/form.html"))
+  res.render("form")
 })
 
 app.get("/dontSue", function (req, res) {
-  res.sendFile(path.join(__dirname, "/public/dontSue.html"));
+  res.render('dontSue')
 })
 
 app.get("/api/users", function () {
+  connection.query("SELECT * FROM users;", function(err, data){
+    if (err){
+      return res.status(500).end();
+    }
+    console.log(data)
+  })
   return res.json(users);
 })
 
